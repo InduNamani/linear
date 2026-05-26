@@ -50,7 +50,7 @@ st.title("🏠 House Price Prediction Dashboard")
 st.write("Predict house prices using Linear Regression")
 
 
-df = pd.read_csv(r"C:\Users\indun\Downloads\archive (13)\Housing.csv")
+df = pd.read_csv("Housing.csv")
 
 
 encoder = LabelEncoder()
