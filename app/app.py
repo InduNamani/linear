@@ -50,7 +50,9 @@ st.title("🏠 House Price Prediction Dashboard")
 st.write("Predict house prices using Linear Regression")
 
 
-df = pd.read_csv("Housing.csv")
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+df = pd.read_csv(os.path.join(BASE_DIR, "Housing.csv"))
 
 
 encoder = LabelEncoder()
